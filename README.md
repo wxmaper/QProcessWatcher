@@ -23,6 +23,7 @@ watcher.addProcess("MSPaint.exe");
 
 ```c++
 #include <QApplication>
+#include <QWidget>
 #include "qprocesswatcher.h"
 
 int main(int argc, char *argv[])
