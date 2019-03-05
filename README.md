@@ -1,13 +1,13 @@
 # QProcessWatcher
 Simple interface for monitoring state of process for Windows.
 
-Use addProcess() method for add a process for monitoring by passing a case insensitive process name.
+Use *[addProcess()](https://github.com/wxmaper/QProcessWatcher/blob/master/qprocesswatcher.h#L77)* method for add a process for monitoring by passing a case insensitive process name.
  
-The signal processStarted() will be emitted in two cases:
+The signal *[processStarted()](https://github.com/wxmaper/QProcessWatcher/blob/master/qprocesswatcher.h#L103)* will be emitted in two cases:
 1. If the monitored process is already started before calling addProcess() method.
 2. When the first copy of process is started.
  
-The signal processFinished() will be emitted when all copies of monitored process is closed.
+The signal *[processFinished()](https://github.com/wxmaper/QProcessWatcher/blob/master/qprocesswatcher.h#L109)* will be emitted when all copies of monitored process is closed.
 
 ## Usage
 ```c++
