@@ -9,9 +9,7 @@ The signal *[processStarted()](https://github.com/wxmaper/QProcessWatcher/blob/m
  
 The signal *[processFinished()](https://github.com/wxmaper/QProcessWatcher/blob/master/qprocesswatcher.h#L109)* will be emitted when all copies of monitored process is closed.
 
-You can define a PROCESS_WATCHER_DEBUG macro in project file for view a small debug information.
-
-*\*.pro*
+You can define a PROCESS_WATCHER_DEBUG macro in project file for view a small debug information:
 ```qmake
 DEFINES += PROCESS_WATCHER_DEBUG
 ```
