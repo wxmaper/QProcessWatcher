@@ -3,6 +3,8 @@ Simple interface for monitoring state of process for Windows.
 
 ## Usage
 ```c++
+#include "qprocesswatcher.h"
+...
 QProcessWatcher watcher;
 watcher.addProcess("MSPaint.exe");
 ```
@@ -13,7 +15,7 @@ watcher.addProcess("MSPaint.exe");
 
 ```c++
 #include <QApplication>
-#include <QProcessWatcher/qprocesswatcher.h>
+#include "qprocesswatcher.h"
 
 int main(int argc, char *argv[])
 {
@@ -42,7 +44,7 @@ Widget has closed automatically when "MSPaint.exe" is closed.
 ```c++
 #include <QApplication>
 #include <QMessageBox>
-#include <QProcessWatcher/qprocesswatcher.h>
+#include "qprocesswatcher.h"
 
 void onProcessStarted(const QString &processName,
                       const QString &originalProcessName)
