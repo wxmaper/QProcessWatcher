@@ -58,7 +58,7 @@ Widget has closed automatically when "MSPaint.exe" is closed.
 void onProcessStarted(const QString &processName,
                       const QString &originalProcessName)
 {
-    const QString title = QObject::tr("Process finished");
+    const QString title = QObject::tr("Process started");
     const QString message = QObject::tr("Process `%1` is started with name `%2`!")
             .arg(processName)
             .arg(originalProcessName);
@@ -82,7 +82,7 @@ int main(int argc, char *argv[])
 
     QProcessWatcher watcher;
     watcher.addProcess("MSPaint.exe");
-    watcher.addProcess("cmd.exe");
+    watcher.addProcess("CMD.EXE");
 
     QObject::connect(&watcher, &QProcessWatcher::processStarted, &onProcessStarted);
     QObject::connect(&watcher, &QProcessWatcher::processFinished, &onProcessFinished);
@@ -91,6 +91,8 @@ int main(int argc, char *argv[])
 }
 ```
 
-This application shows information message when processes "MSPaint.exe" and "cmd.exe" starts or finished.
+This application shows information message when processes "MSPaint.exe" and "CMD.EXE" starts or finished.
+
+![cmd.exe](https://pp.userapi.com/c850728/v850728114/d2798/f_ZxaGbJDIE.jpg)
 
 
