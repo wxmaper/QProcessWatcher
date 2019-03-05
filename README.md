@@ -1,15 +1,15 @@
 # QProcessWatcher
 Simple interface for monitoring state of process for Windows.
 
-# Usage
+## Usage
 ```c++
 QProcessWatcher watcher;
 watcher.addProcess("MSPaint.exe");
 ```
 
-# Examples
+## Examples
 
-# Example 1
+### Example 1
 
 ```c++
 #include <QApplication>
@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
 This windget-based application wait for starting "MSPaint.exe" process and then shows the Widget form.  
 Widget has closed automatically when "MSPaint.exe" is closed.
 
-# Example 2
+### Example 2
 
 ```c++
 #include <QApplication>
