@@ -43,8 +43,8 @@ int main(int argc, char *argv[])
     watcher.addProcess("MSPaint.exe");
 
     // Connect signals
-    QObject::connect(&watcher, SIGNAL(processFinished(QString)), &w, SLOT(close()));
     QObject::connect(&watcher, SIGNAL(processStarted(QString,QString)), &w, SLOT(show()));
+    QObject::connect(&watcher, SIGNAL(processFinished(QString)), &w, SLOT(close()));
 
     return a.exec();
 }
