@@ -1,5 +1,5 @@
 # QProcessWatcher
-Simple interface for monitoring state of process for Windows.
+Simple interface for monitoring state of process **for Windows**.
 
 Use *[addProcess()](https://github.com/wxmaper/QProcessWatcher/blob/master/qprocesswatcher.h#L77)* method for add a process for monitoring by passing a case insensitive process name.
  
